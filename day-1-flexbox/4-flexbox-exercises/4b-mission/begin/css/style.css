@@ -101,8 +101,17 @@ figcaption a {
     color: var(--color1);
 }
 
-p{
-    display: inline-block;
+/* mission styles */
+#mission{
+    margin-bottom:3rem ;
+}
+.missiontext{
+    display: block;
+    line-height: 1.7;
+}
+
+.missionimg {
+    display: block;
 }
 
 /* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
@@ -143,6 +152,11 @@ p{
     color: var(--color8);
 }
 
+.logo{
+    border: none;
+    overflow:unset;
+}
+
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
@@ -159,6 +173,28 @@ p{
     figure img {
         object-position: 0;
     }
+
+   .missiontext{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+   }
+
+   .missiontext figure {
+    flex-basis: 32.5%;
+    /* order: 1; */
+ }
+ .missiontext img {
+    width: 100%;
+}
+.missiontext p {
+    flex-basis: 65.5%;
+    /* order: 2; */
+}
+
+
+
+
 }
 
 @media (min-width: 800px) {
@@ -166,6 +202,15 @@ p{
         margin-left: 100px;
     }
     section li {
+        flex-basis: 32.5%;
+    }
+    .missiontext {
+        justify-content: space-between;
+    }
+    #mission .missiontext {
+        flex-basis: 64.5%;
+    }
+    #mission img {
         flex-basis: 32.5%;
     }
 }
