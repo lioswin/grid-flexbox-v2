@@ -101,6 +101,9 @@ figcaption a {
     color: var(--color1);
 }
 
+p{
+    display: inline-block;
+}
 
 /* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
 
