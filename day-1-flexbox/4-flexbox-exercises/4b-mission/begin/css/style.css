@@ -153,8 +153,11 @@ figcaption a {
 }
 
 .logo{
-    border: none;
+     border: none; 
+     position: relative;
     overflow:unset;
+    height: 150px;
+    margin-bottom: 70px;
 }
 
 
